@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carpio_Tenay_tsa8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="controls">
+    <button id="reset">Reset Flexbox</button>
+    <div class="input-group">
+      <label for="gap">Gap: </label>
+      <input type="number" id="gap" value="10" min="0">
+      <button id="setGap">Set Gap</button>
+    </div>
+
+    <div class="input-group">
+      <label>Flex Direction: </label>
+      <button id="row">Row</button>
+      <button id="column">Column</button>
+    </div>
+
+    <div class="input-group justify-buttons">
+      <label>Justify Content: </label>
+      <button class="justify" data-value="flex-start">Start</button>
+      <button class="justify" data-value="center">Center</button>
+      <button class="justify" data-value="flex-end">End</button>
+      <button class="justify" data-value="space-between">Space Between</button>
+      <button class="justify" data-value="space-around">Space Around</button>
+      <button class="justify" data-value="space-evenly">Space Evenly</button>
+    </div>
+
+    <div class="input-group align-buttons">
+      <label>Align Items: </label>
+      <button class="align" data-value="flex-start">Start</button>
+      <button class="align" data-value="center">Center</button>
+      <button class="align" data-value="flex-end">End</button>
+    </div>
+
+    <div class="input-group flex-grow-group">
+      <label>Flex Grow: </label>
+      <button id="resetGrow">Reset</button>
+      <div class="grow-input">
+        <label for="box1">Box 1: </label>
+        <input type="number" id="box1" value="1" min="0">
+      </div>
+      <div class="grow-input">
+        <label for="box2">Box 2: </label>
+        <input type="number" id="box2" value="1" min="0">
+      </div>
+      <div class="grow-input">
+        <label for="box3">Box 3: </label>
+        <input type="number" id="box3" value="1" min="0">
+      </div>
+      <button id="setGrow">Set Grow</button>
+      <button id="growAll">Grow All</button>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="flex-item" id="item1">1</div>
+    <div class="flex-item" id="item2">2</div>
+    <div class="flex-item" id="item3">3</div>
+  </div>
+
+  <script src="tsa8.js"></script>
+</body>
+</html>
