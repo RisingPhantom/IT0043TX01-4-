@@ -42,7 +42,7 @@ function resetFlexbox() {
 
 function setGap() {
   const gap = document.getElementById('gap').value;
-  document.querySelector('.flex-container').style.gap = ${gap}px;
+  document.querySelector('.flex-container').style.gap = `${gap}px`;
 }
 
 function setFlexDirection(direction) {
