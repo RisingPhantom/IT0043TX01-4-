@@ -1,6 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f4f8;
+    border: black;
     color: #333;
     padding: 20px;
     margin: 0;
@@ -46,20 +47,21 @@ body {
   }
   
   .flex-item {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #514caf;
+    color: darkturquoise;
     padding: 20px;
     text-align: center;
     flex-grow: 1;
     min-width: 100px;
     margin-bottom: 10px;
+    border-style: dotted;
     border-radius: 4px;
     transition: transform 0.2s ease, background-color 0.2s ease;
   }
   
   .flex-item:hover {
     transform: scale(1.05);
-    background-color: #45a049;
+    background-color: #45a09a;
   }
   
   button {
@@ -67,26 +69,26 @@ body {
     font-size: 1em;
     cursor: pointer;
     border: none;
-    background-color: #007BFF;
-    color: purple;
+    background-color: #00eaff;
+    color: rgba(11, 66, 184, 0.981);
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #46a045;
     transform: translateY(-2px);
   }
   
   button.active {
-    background-color: #0056b3;
+    background-color: #45a09a;
   }
   
   input[type="number"] {
     padding: 5px;
     font-size: 1em;
     width: 60px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc89;
     border-radius: 4px;
   }
   
@@ -105,6 +107,7 @@ body {
     .grow-input {
       flex-direction: column;
       align-items: flex-start;
+      border-radius: 10px;
     }
   
     .justify-buttons,
